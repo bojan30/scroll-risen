@@ -7,12 +7,12 @@ Trigger css animations on scroll as elements enter the viewport. Zero dependenci
 
 Add link in document head
 
-```js
+```html
     <link rel="stylesheet" href="./dist/css/scrollrisen.css">
 ```
 Add script in document body and init scrollrisen:
 
-```js
+```html
     <script src="./dist/js/scrollrisen.js"></script>
     <script>
         //read more about the options below
@@ -55,8 +55,8 @@ scrollrisen.init({
     easing: 'ease', //easing function
     duration: 2000, //animation duration in miliseconds
     trigger: 0.2, //determines the point when animation should kick in relative to viewport. 0 means as soon as element becomes visible, 1 means when top of the element reaches the top of the screen
-    reverse: true, //should  reverse the animation if element is below the vieport
-    debounce: 16, //how often shoud scroll handler be called
+    reverse: true, //should  reverse the animation if element is below the viewport
+    debounce: 16, //how often should scroll handler be called
 });
 ```
 
