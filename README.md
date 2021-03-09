@@ -52,12 +52,11 @@ Import script and style and initialize
 ```js
 scrollrisen.init({
     //below is a list of default options
-    easing: 'cubic-bezier(0.34, 1.56, 0.64, 1)', //easing function
-    duration: '0.5s', //animation duration in seconds
+    easing: 'ease', //easing function
+    duration: 2000, //animation duration in miliseconds
     trigger: 0.2, //determines the point when animation should kick in relative to viewport. 0 means as soon as element becomes visible, 1 means when top of the element reaches the top of the screen
     reverse: true, //should  reverse the animation if element is below the vieport
     debounce: 16, //how often shoud scroll handler be called
-    activeClass: '_sr-active', //active class applied to element in viewport
 });
 ```
 
