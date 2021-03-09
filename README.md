@@ -7,12 +7,12 @@ Trigger css animations on scroll as elements enter the viewport. Zero dependenci
 
 Add link in document head
 
-```
+```js
     <link rel="stylesheet" href="./dist/css/scrollrisen.css">
 ```
 Add script in document body and init scrollrisen:
 
-```
+```js
     <script src="./demo/js/scrollrisen.js"></script>
     <script>
         //read more about the options below
@@ -24,19 +24,19 @@ Add script in document body and init scrollrisen:
 
 #### npm
 
-```
+```js
     npm install scroll-risen
 ```
 
 #### yarn
 
-```
+```js
     yarn add scroll-risen
 ```
 
 Import script and style and initialize
 
-```
+```js
     import scrollrisen from 'scroll-risen/dist/scrollrisen.js'
     
     import 'scroll-risen/dist/scrollrisen.css'
@@ -49,7 +49,7 @@ Import script and style and initialize
 
 ### 1.Initialize
 
-```
+```js
 scrollrisen.init({
     //below is a list of default options
     easing: 'cubic-bezier(0.34, 1.56, 0.64, 1)', //easing function
@@ -65,7 +65,7 @@ scrollrisen.init({
 
 data-sr attribute is used to determine which elements you want to animate and what type of animations you want to apply
 
-```
+```html
     <div data-sr = "fade-l"></div> <!-- applies data-sr attribute to fade from left to right -->
 ```
 
