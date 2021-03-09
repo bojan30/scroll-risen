@@ -13,7 +13,7 @@ Add link in document head
 Add script in document body and init scrollrisen:
 
 ```js
-    <script src="./demo/js/scrollrisen.js"></script>
+    <script src="./dist/js/scrollrisen.js"></script>
     <script>
         //read more about the options below
         scrollrisen.init({});
