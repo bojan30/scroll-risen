@@ -1,0 +1,4 @@
+node_modules
+.npmignore
+demo
+index.html

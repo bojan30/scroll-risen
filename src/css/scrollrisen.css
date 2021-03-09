@@ -1,0 +1,198 @@
+body{
+  overflow-x: hidden;
+}
+
+/*animation specific styles*/
+
+
+/***
+  fade animations
+***/
+
+/* fade in*/
+[data-sr = "fade"]{
+  opacity: 0;
+  transition: 1s ease-in-out;
+  transition-property: opacity;
+}
+[data-sr = "fade"]._sr-active{
+  opacity: 1;
+}
+
+/*fade in left*/
+[data-sr = "fade-l"]{
+  opacity: 0;
+  transform: translate3d(-100px, 0, 0);
+  transition-property: opacity, transform;
+  transition: 1s ease-in-out;
+}
+[data-sr = "fade-l"]._sr-active{
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+/*fade in right*/
+[data-sr = "fade-r"]{
+  transition-property: opacity, transform;
+  opacity: 0;
+  transform: translate3d(100px, 0, 0);
+  transition: 1s ease-in-out;
+}
+[data-sr = "fade-r"]._sr-active{
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/*fade in top*/
+[data-sr = "fade-t"]{
+  opacity: 0;
+  transform: translate3d(0, -100px, 0);
+  transition: all 1s ease-in-out;
+}
+[data-sr = "fade-t"]._sr-active{
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/*fade in bottom*/
+[data-sr = "fade-b"]{
+  opacity: 0;
+  transform: translate3d(0, 100px, 0);
+  transition: all 1s ease-in-out;
+}
+[data-sr = "fade-b"]._sr-active{
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/*fade in top left*/
+[data-sr = "fade-t-l"]{
+  opacity: 0;
+  transform: translate3d(-100px, -100px, 0);
+  transition: all 1s ease-in-out;
+}
+[data-sr = "fade-t-l"]._sr-active{
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/*fade in bottom left*/
+[data-sr = "fade-b-l"]{
+  opacity: 0;
+  transform: translate3d(-100px, 100px, 0);
+  transition: all 1s ease-in-out;
+}
+[data-sr = "fade-b-l"]._sr-active{
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/*fade in top right*/
+[data-sr = "fade-t-r"]{
+  opacity: 0;
+  transform: translate3d(100px, -100px, 0);
+  transition: all 1s ease-in-out;
+}
+[data-sr = "fade-t-r"]._sr-active{
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/*fade in bottom right*/
+[data-sr = "fade-b-r"]{
+  opacity: 0;
+  transform: translate3d(100px, 100px, 0);
+  transition: all 1s ease-in-out;
+}
+[data-sr = "fade-b-r"]._sr-active{
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/***
+  flip
+***/
+
+/*flip left*/
+[data-sr = "flip-l"]{
+  transform: perspective(2500px) rotateY(-90deg);
+  transition: all 1s ease-in-out;
+}
+[data-sr = "flip-l"]._sr-active{
+  transform: perspective(0px) rotateY(0deg);
+}
+
+/*flip right*/
+[data-sr = "flip-r"]{
+  transform: perspective(2500px) rotateY(90deg);
+  transition: all 1s ease-in-out;
+}
+[data-sr = "flip-r"]._sr-active{
+  transform: perspective(0px) rotateY(0deg);
+}
+
+/*flip top*/
+[data-sr = "flip-t"]{
+  transform: perspective(2500px) rotateX(90deg);
+  transition: all 1s ease-in-out;
+}
+[data-sr = "flip-t"]._sr-active{
+  transform: perspective(0px) rotateX(0deg);
+}
+
+/*flip bottom*/
+[data-sr = "flip-b"]{
+  transform: perspective(2500px) rotateX(-90deg);
+  transition: all 1s ease-in-out;
+}
+[data-sr = "flip-b"]._sr-active{
+  transform: perspective(0px) rotateX(0deg);
+}
+
+/*zoom*/
+[data-sr = "zoom"]{
+  transform: scale(0);
+  transition: all 1s ease-in-out;
+}
+[data-sr = "zoom"]._sr-active{
+  transform: scale(1);
+}
+
+/*zoom left*/
+[data-sr = "zoom-l"]{
+  transform: scale(0) translateX(-100px);
+  transform-origin: left center;
+  transition: all 1s ease-in-out;
+}
+[data-sr = "zoom-l"]._sr-active{
+  transform: scale(1) translateX(0px);
+}
+
+/*zoom right*/
+[data-sr = "zoom-r"]{
+  transform: scale(0) translateX(100px);
+  transform-origin: right center;
+  transition: all 1s ease-in-out;
+}
+[data-sr = "zoom-r"]._sr-active{
+  transform: scale(1) translateX(0px);
+}
+
+/*zoom top*/
+[data-sr = "zoom-t"]{
+  transform: scale(0) translateY(-100px);
+  transform-origin: center top;
+  transition: all 1s ease-in-out;
+}
+[data-sr = "zoom-t"]._sr-active{
+  transform: scale(1) translateY(0px);
+}
+
+/*zoom bottom*/
+[data-sr = "zoom-b"]{
+  transform: scale(0) translateY(100px);
+  transform-origin: center bottom;
+  transition: all 1s ease-in-out;
+}
+[data-sr = "zoom-b"]._sr-active{
+  transform: scale(1) translateY(0px);
+}
